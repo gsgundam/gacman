@@ -1,0 +1,110 @@
+footer
+  margin-top 1em
+  background color-background
+
+#footer
+  border-top 2px solid color-gray
+  margin 0 auto 1.5em
+  overflow hidden
+  position relative
+  .line
+    width 100%
+    margin 0 auto
+    @media mini
+      width 10em
+      float left
+      position relative
+    span
+      display block
+      width 0.5em
+      height 6.25em
+      border-right 0.125em solid color-gray
+      margin 0 auto
+      @media mini
+        position absolute
+        left 3em
+        margin 0 0 1.5em
+
+.social-font
+  margin-top 1em
+  text-align center
+  a
+    float left
+    display block
+    color color-gray-dark
+    font-size font-size+85
+  a.icon-weibo
+    &:hover:before
+      color color-weibo
+  a.icon-github
+    &:hover:before
+      color color-gray
+  a.icon-email
+    &:hover:before
+      color color-theme
+  a.icon-tencent-weibo
+    &:hover:before
+      color color-blue
+
+.icon-weibo:before,.icon-github:before,.icon-twitter:before,.icon-facebook:before,.icon-stack-overflow:before,.icon-email:before,.icon-google_plus:before,.icon-linkedin:before,.icon-tencent-weibo:before
+  font-family font-icon-family
+  font-smoothing()
+
+.icon-tencent-weibo:before
+  content "\f1d5"
+.icon-weibo:before
+  content "\f18a"
+.icon-github:before
+  content "\f09b"
+.icon-twitter:before
+ content "\f099"
+.icon-facebook:before
+  content "\f09a"
+.icon-stack-overflow:before
+  content "\f16c"
+.icon-email:before
+  content: "\f003"
+.icon-google_plus:before
+  content "\f0d5"
+.icon-linkedin:before
+  content "\f08c"
+.icon-douban:before
+  font-family font-icon-diao
+  font-smoothing()
+  content "\f111"
+.icon-zhihu:before
+  font-family font-icon-diao
+  font-smoothing()
+  content "\f142"
+
+.copyright
+  if ShowCustomFont
+    font-smoothing()
+    font-family font-custom-family
+  else
+    font-family font-default
+    font-size 1em
+  width 100%
+  color color-gray-dark
+  text-align center
+  @media mini
+    float left
+  a
+    color color-theme
+    &:hover
+      text-decoration none!important
+      color color-theme
+      text-decoration underline
+
+.more-site-info
+  margin-top 0.5em
+  width 100%
+  text-align center
+  @media mini
+    float left
+  a
+    color color-theme
+    &:hover
+      text-decoration none!important
+      color color-theme
+      text-decoration underline

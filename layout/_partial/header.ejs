@@ -1,0 +1,39 @@
+<div class="container">
+    <div id="textlogo" class="row">
+        <div class="col-md-8 title">
+            <h1 class="site-name"><a href="<%- config.root %>" title="<%= config.title %>"><%= config.title %></a></h1>
+            <h2 class="blog-motto"><% if (config.subtitle){ %><%= config.subtitle %><% } %></h2>
+        </div>
+
+        <div class="search-container col-md-4">
+            <% if	(theme.google_cse.enable){ %>
+            <form class="search" action="<%- config.root %>search/index.html" method="get" accept-charset="utf-8">
+                <label>Search</label>
+                <input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="<%= __('搜索关键字') %>" />
+            </form>
+            <% } else if(theme.baidu_search.enable){ %>
+            <form class="search" action="<%- theme.baidu_search.site %>" target="_blank">
+                <label>Search</label>
+                <input name="s" type="hidden" value= <%= theme.baidu_search.id %> >
+                <input class="text-input" type="text" name="q">
+                <input class="search-btn" type="submit" value="SEARCH">
+            </form>
+            <% } else { %>
+            <form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+                <label>Search</label>
+                <input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="<%= __('搜索关键字') %>" />
+                <input type="hidden" name="q" value="site:<%- config.url.replace(/^https?:\/\//, '') %>">
+            </form>
+            <% } %>
+        </div>
+    </div>
+    <div class="navbar"><a class="navbutton navmobile" href="#" title="<%= __('menu') %>">
+        </a></div>
+    <nav class="animated">
+        <ul class="no-margin">
+            <% for (var i in theme.menu){ %>
+            <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+            <% } %>
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,13 @@
+<% if (site.tags.length){ %>
+  <div class="tagcloudlist">
+      <div class="col-xs-4 no-padding text-center">
+          <p class="asidetitle"><%= __('tagcloud') %></p>
+      </div>
+      <div class="clearfix"></div>
+      <div class="aside-line"></div>
+    <div class="tagcloudlist clearfix">
+       <%- tagcloud() %>
+    </div>
+      <div class="margin-30"></div>
+  </div>
+<% } %>

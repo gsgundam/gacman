@@ -1,0 +1,142 @@
+//sidebar
+#asidepart
+  background color-section
+  margin 1em 0 0
+
+.asidetitle
+  padding 0.4em 0
+  margin 0
+  color color-white
+  background-color color-theme
+  a
+    color color-theme
+    &:hover
+      color color-theme
+      transition color .5s
+.aside-line
+  border-top 3px solid color-theme
+
+//categories
+.categorieslist
+  @media mini
+    float left
+    margin 0 5% 0 0
+  @media tablet 
+    float none
+    margin 1em 0 0
+  li 
+    border-bottom 1px solid color-gray
+    a
+      display block
+      padding 0.5em 5%
+      &:hover
+        color color-orange
+
+//tag
+.tagslist
+  margin 1em 0 0
+  ul
+    padding 0.5em 0
+  ul li
+    float left
+    a
+      display block
+      margin 0.3125em
+      padding 0.125em 0.3125em
+      background lighten(color-gray, 30%)
+      &:hover
+        color color-white
+        background color-orange
+
+//rss
+.rsspart
+  background color-orange
+  width 100%
+  a
+    color color-white
+    display block
+    padding 0.625em 0
+    text-align center
+    &:hover
+      background saturate(darken(color-orange, 25%), 10%)
+    &::before
+      font-family font-icon-family
+      font-smoothing()
+      padding-right 0.5em
+      content "\f09e"
+
+//archive
+.archiveslist
+  padding-right 1em
+  margin 1em 0 0
+  li
+    font-size 0.8em
+    line-height 2em
+    list-style square inside
+    padding 0 3%
+    a
+      padding 0.5em
+      font-size 120%
+      &:hover
+        color color-orange
+        transition color .25s
+  .archive-list-count
+    &:before
+      content "("
+    &:after
+      content ")"
+          
+.archive-list 
+  padding 0.5em 0 
+
+.archive-float 
+  ul
+    padding 0 
+  li
+    float left
+    margin 0.3em
+    @media tablet
+      float none
+
+//tagcloud
+.tagcloudlist
+  margin 1em 0 0
+  .tagcloudlist
+    a
+      padding 0.2em
+      display block
+      float left
+      &:hover
+        color color-orange
+        transition color .25s
+
+//links
+.linkslist
+  margin-top 1em
+  ul
+    padding 0.5em 0
+    li
+      list-style square inside
+    a
+      font-size 1em
+      line-height line-height+0.3
+      display block
+      padding 0 3%
+      &:hover
+        color color-orange
+        transition color .25s
+
+//weibo
+.weiboshow
+  margin-top 0.5em 
+  @media mini
+    width 45%
+    float left
+    margin 0 5% 0 0
+  @media tablet 
+    width 100%
+    float none
+    margin 1em 0 0
+  iframe
+    padding 0.5em 0
+

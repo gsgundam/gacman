@@ -1,0 +1,11 @@
+<% if (site.posts.length){ %>
+  <div class="archiveslist">
+      <div class="col-xs-4 no-padding text-center">
+          <p class="asidetitle"><%= __('archive_a') %></p>
+      </div>
+      <div class="clearfix"></div>
+      <div class="aside-line"></div>
+      <%- list_archives({format:__('archive_date')}) %>
+      <div class="margin-30"></div>
+  </div>
+<% } %>

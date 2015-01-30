@@ -1,0 +1,19 @@
+<div class="linkslist">
+    <div class="col-xs-4 no-padding text-center">
+        <p class="asidetitle"><%= __('links') %></p>
+    </div>
+    <div class="clearfix"></div>
+    <div class="aside-line"></div>
+    <ul>
+        <% for (var i in theme.links){ %>
+          <li>
+            <% if(theme.links[i].indexOf(",") > 0) { %>
+            	<a href="<%- theme.links[i].split(",")[0] %>" target="_blank" title="<%- theme.links[i].split(",")[1] %>"><%= i %></a>
+            <% }else{ %>
+            	<a href="<%- theme.links[i] %>" target="_blank" title="<%= i %>"><%= i %></a>
+            <% } %>
+          </li>
+        <% } %>
+    </ul>
+    <div class="margin-30"></div>
+</div>

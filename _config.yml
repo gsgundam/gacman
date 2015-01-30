@@ -1,0 +1,118 @@
+##### Gacman v0.1.0
+
+##### Menu
+menu:
+  首页: /
+  归档: /archives
+  关于: /about
+## you can create `tags` and `categories` folders in `../source`.
+## And create a `index.md` file in each of them.
+## set `front-matter`as
+## layout: tags (or categories)
+## title: tags (or categories)
+## ---
+
+#### Widgets
+widgets: 
+- category
+- tag
+- archive
+- links
+- rss
+- ads
+## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo, ads is underdeveloping
+
+
+#### RSS 
+rss: /atom.xml ## RSS address.
+
+#### Image
+favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.
+apple_icon: img/logo.jpg ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
+
+#### index post is expanding or not 
+index:
+  expand: false           ## default is unexpanding,so you can only see the short description of each post.
+  excerpt_link: Read More  
+  
+#### Author information
+author:
+  weibo:   gsgundam   ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
+  weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
+  tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
+  douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
+  zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
+  email:      gsgundam@gmail.com ## e.g. imjark@gmail.com
+  twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
+  github:  gsgundam   ## e.g. wuchong for https://github.com/wuchong
+  facebook:   ## e.g. imjark for https://facebook.com/imjark
+  linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
+  google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
+  stackoverflow:  ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
+  tencent_weibo: gsgundam  ## e.g. gsgundam for http://t.qq.com/gsgundam
+  social_offset: 4  ## e.g 4 for max 12 cols, each social icon have 1 col
+  beian:   渝ICP备14004903号
+## if you set them, the corresponding  share button will show on the footer
+
+#### Toc
+toc:
+  article: true   ## show contents in article.
+  aside: true     ## show contents in aside.
+## you can set both of the value to true of neither of them.
+## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
+
+#### Links
+links:
+  极风游科技: http://dashgame.com/
+  极风游戏: http://dashgame.cn/
+  FontAwesome中文网: http://fontawesome.dashgame.com/
+  淘气的祎祎 姐妹店: http://shop109983222.taobao.com/
+  木哈哈 - 凶残程序猿: http://yesokay.herokuapp.com/
+
+  
+
+#### Comment
+duoshuo_shortname: hexogsgundam ## e.g. wuchong   your duoshuo short name.
+disqus_shortname:  ## e.g. wuchong   your disqus short name.
+
+#### Share button
+jiathis:
+  enable: false ## if you use jiathis as your share tool,the built-in share tool won't be display.
+  id:    ## e.g. 1889330 your jiathis ID. 
+  tsina: ## e.g. 2176287895 Your weibo id,It will be used in share button.
+  
+#### Analytics
+google_analytics:
+  enable: false
+  id:        ## e.g. UA-46321946-2 your google analytics ID.
+  site:      ## e.g. wuchong.me your google analytics site or set the value as auto.
+## You MUST upgrade to Universal Analytics first!
+## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
+baidu_tongji:
+  enable: false
+  sitecode:  ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+cnzz_tongji:
+  enable: false
+  siteid:    ## e.g. 1253575964 your cnzz tongji site id
+
+#### Miscellaneous
+ShowCustomFont: false  ## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/jacman/source/css`.
+fancybox: true        ## if you use gallery post or want use fancybox please set the value to true.
+totop: true           ## if you want to scroll to top in every post set the value to true
+
+
+#### Custom Search
+google_cse: 
+  enable: false
+  cx:   ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
+## https://www.google.com/cse/ 
+## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
+## set the 'front-matter' as
+## layout: search 
+## title: search
+## ---
+baidu_search:     ## http://zn.baidu.com/
+  enable: true
+  id:  7099383380196571444 ## e.g. "783281470518440642"  for your baidu search id
+  site: http://zhannei.baidu.com/cse/search  ## your can change to your site instead of the default site
+  
