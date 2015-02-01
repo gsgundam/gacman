@@ -72,7 +72,10 @@ links:
   淘气的祎祎 姐妹店: http://shop109983222.taobao.com/
   木哈哈: http://yesokay.herokuapp.com/
 
-  
+#### Related Posts
+ujian:          ##
+  enable: true  ## if you use ujian to show related posts, enable it.
+  id: 2006789   ## e.g. 2006789 your ujian ID.
 
 #### Comment
 duoshuo_shortname: hexogsgundam ## e.g. wuchong   your duoshuo short name.
