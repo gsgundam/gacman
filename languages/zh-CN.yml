@@ -10,7 +10,7 @@ archive_a: 归档
 archive_b: 归档：%s
 archive_date: "YYYY 年 MM 月"
 page: 第 %d 页
-recent_posts: 近期文章
+recent_posts: 最新文章
 menu: 菜单
 links: 友情链接
 weibo: 新浪微博
@@ -21,3 +21,4 @@ updated: 更新日期
 totop: 返回顶部
 datepublished: 发表于
 ads: 赞助
+sitemap: 网站地图

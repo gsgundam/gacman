@@ -1,0 +1,17 @@
+<% if (site.posts.length){ %>
+<div class="linkslist">
+    <div class="col-xs-4 no-padding text-center">
+        <p class="asidetitle"><%= __('recent_posts') %></p>
+    </div>
+    <div class="clearfix"></div>
+    <div class="aside-line"></div>
+    <ul>
+        <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+        <li>
+            <a href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
+        </li>
+        <% }) %>
+    </ul>
+    <div class="margin-30"></div>
+</div>
+<% } %>

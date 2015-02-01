@@ -1,10 +1,11 @@
-##### Gacman v0.1.0
+##### Gacman v0.1.1
 
 ##### Menu
 menu:
   首页: /
   归档: /archives
   关于: /about
+  Markdown在线编辑: 'https://stackedit.io/editor#'
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
@@ -16,11 +17,11 @@ menu:
 widgets: 
 - category
 - tag
-- archive
+- recent_posts
 - links
 - rss
 - ads
-## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo, ads is underdeveloping
+## provide nine widgets:category,tag,rss,archive,tagcloud,links,weibo,ads,recent_posts
 
 
 #### RSS 
@@ -58,6 +59,7 @@ author:
 toc:
   article: true   ## show contents in article.
   aside: true     ## show contents in aside.
+  sitemap: true   ## show sitemap in footer.
 ## you can set both of the value to true of neither of them.
 ## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
 
@@ -66,8 +68,9 @@ links:
   极风游科技: http://dashgame.com/
   极风游戏: http://dashgame.cn/
   FontAwesome中文网: http://fontawesome.dashgame.com/
+  淘气的祎祎 山竹家: http://shanzhujia.taobao.com/
   淘气的祎祎 姐妹店: http://shop109983222.taobao.com/
-  木哈哈 - 凶残程序猿: http://yesokay.herokuapp.com/
+  木哈哈: http://yesokay.herokuapp.com/
 
   
 
@@ -80,7 +83,9 @@ jiathis:
   enable: false ## if you use jiathis as your share tool,the built-in share tool won't be display.
   id:    ## e.g. 1889330 your jiathis ID. 
   tsina: ## e.g. 2176287895 Your weibo id,It will be used in share button.
-  
+baidu_share:
+  enable: true
+
 #### Analytics
 google_analytics:
   enable: false
@@ -89,8 +94,8 @@ google_analytics:
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 baidu_tongji:
-  enable: false
-  sitecode:  ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+  enable: true
+  sitecode: 19adf62d9122ba1e376af249bfb86260 ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
 cnzz_tongji:
   enable: false
   siteid:    ## e.g. 1253575964 your cnzz tongji site id

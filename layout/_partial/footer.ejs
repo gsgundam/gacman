@@ -73,5 +73,8 @@
         <% if (theme.author.beian) { %>
         <a href="http://www.miitbeian.gov.cn/" target="_blank"><%= theme.author.beian %></a>
         <% } %>
+        <% if (theme.toc.sitemap) { %>
+        <a href="<%= config.url %>/sitemap.xml" target="_blank"><%= __('sitemap') %></a>
+        <% } %>
     </p>
 </div>
