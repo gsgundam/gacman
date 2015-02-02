@@ -1,0 +1,25 @@
+<% if (site.posts.length){ %>
+<div class="linkslist">
+    <div class="col-xs-4 no-padding text-center">
+        <p class="asidetitle"><%= __('random_posts') %></p>
+    </div>
+    <div class="clearfix"></div>
+    <div class="aside-line"></div>
+    <ul>
+        <%  var randomCount = 0;
+            postsContainer = [];
+            site.posts.each(function(post,i){
+                postsContainer.push(post);
+            });
+            for(var j=0; j<theme.random_posts.num; j++){
+                var index = Math.floor((Math.random()*postsContainer.length));
+                var selectedPost = postsContainer[index];
+        %>
+        <li>
+            <a href="<%- url_for(selectedPost.path) %>"><%= selectedPost.title || '(no title)' %></a>
+        </li>
+        <%  postsContainer.splice(index,1); } %>
+    </ul>
+    <div class="margin-30"></div>
+</div>
+<% } %>

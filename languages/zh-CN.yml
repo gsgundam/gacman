@@ -11,6 +11,7 @@ archive_b: 归档：%s
 archive_date: "YYYY 年 MM 月"
 page: 第 %d 页
 recent_posts: 最新文章
+random_posts: 随机文章
 menu: 菜单
 links: 友情链接
 weibo: 新浪微博

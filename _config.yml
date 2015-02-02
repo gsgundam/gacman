@@ -17,12 +17,20 @@ menu:
 widgets: 
 - category
 - tag
+- random_posts
 - recent_posts
 - links
 - rss
 - ads
-## provide nine widgets:category,tag,rss,archive,tagcloud,links,weibo,ads,recent_posts
+## provide nine widgets:category,tag,rss,archive,tagcloud,links,weibo,ads,recent_posts,random_posts
 
+#### Recent Posts
+recent_posts:
+  num: 5    ## e.g. 5 to show 5 recent posts in sidebar
+
+#### Random Posts
+random_posts:
+  num: 5    ## e.g. 5 to show 5 random posts in sidebar
 
 #### RSS 
 rss: /atom.xml ## RSS address.
@@ -33,7 +41,7 @@ apple_icon: img/logo.jpg ## size:114px*114px,please put image into the theme fol
 
 #### index post is expanding or not 
 index:
-  expand: false           ## default is unexpanding,so you can only see the short description of each post.
+  expand: false           ## default is expanding,so you can only see the short description of each post.
   excerpt_link: Read More  
   
 #### Author information
