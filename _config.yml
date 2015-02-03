@@ -18,11 +18,12 @@ widgets:
 - category
 - tag
 - random_posts
+- latest_updated
 - recent_posts
 - links
 - rss
 - ads
-## provide nine widgets:category,tag,rss,archive,tagcloud,links,weibo,ads,recent_posts,random_posts
+## provide nine widgets:category,tag,rss,archive,tagcloud,links,weibo,ads,recent_posts,random_posts,latest_updated
 
 #### Recent Posts
 recent_posts:
@@ -31,6 +32,10 @@ recent_posts:
 #### Random Posts
 random_posts:
   num: 5    ## e.g. 5 to show 5 random posts in sidebar
+
+#### Latest Updated Posts
+latest_updated:
+  num: 5    ## e.g. 5 to show 5 latest updated posts in sidebar
 
 #### RSS 
 rss: /atom.xml ## RSS address.
