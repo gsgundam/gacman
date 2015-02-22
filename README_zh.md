@@ -1,4 +1,4 @@
-# Jacman
+# Gacman
 
 [README](/README.md)
 
