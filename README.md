@@ -4,6 +4,8 @@
 
 Gacman is a simple and responsive theme based on [Jacman](https://github.com/wuchong/jacman) and Bootstrap for [Hexo](http://hexo.io) with some special features.  
 
+Please note that, I really suggest you do not use this theme until v0.2.0 has been publiced.
+
 [Demo](http://gsgundam.com) | [GSGundam's Blog](http://gsgundam.com)
 
 [How to use Gacman or Jacman](http://wuchong.me/blog/2014/11/20/how-to-use-jacman/)

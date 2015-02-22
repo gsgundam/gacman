@@ -4,6 +4,8 @@
 
 Gacman 是为 [Hexo](http://hexo.io) 设计的一款简洁且具有响应式的主题。Gacman 基于 [Jacman](https://github.com/wuchong/jacman) 和 Bootstrap。
 
+墙裂建议各位在本主题发布v0.2.0版本以前不要使用。
+
 [主题演示](http://gsgundam.com) | [GSGundam砍柴工](http://gsgundam.com)
 
 [如何使用 Gacman 或 Jacman 主题](http://wuchong.me/blog/2014/11/20/how-to-use-jacman/)

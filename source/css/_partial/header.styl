@@ -124,3 +124,31 @@ header nav
     color color-white
   label
     display none
+
+// special for baidu zhannei search
+#bdcs-search-form
+  padding 2.3em 0 0
+  float right
+  input
+    float left
+    /*-webkit-appearance textfield*/
+    font-size 0.87em
+    line-height line-height+1
+    border 1px solid color-gray
+    color color-gray-dark
+    background color-white
+  #bdcs-search-form-input
+    padding 0 0.4em
+    @media tablet
+      width 12em
+      transition .2s width
+      &:focus
+        width 20em
+  #bdcs-search-form-submit
+    float left
+    margin-left 4px
+    width 6em
+    background-color color-blue
+    color color-white
+  label
+    display none

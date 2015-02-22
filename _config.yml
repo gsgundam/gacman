@@ -1,4 +1,5 @@
-##### Gacman v0.1.1
+##### Gacman v0.1.4
+## Please note that, I really suggest you do not use this theme until v0.2.0 has been publiced.
 
 ##### Menu
 menu:
@@ -132,8 +133,12 @@ google_cse:
 ## layout: search 
 ## title: search
 ## ---
-baidu_search:     ## http://zn.baidu.com/
+baidu_search:     ## baidu custom search style can not be customized, so this theme just support 'site:<search content>' search mode
+  enable: false
+swiftype:         ## https://swiftype.com   it maybe the best custom search engine you can have, try it!
   enable: true
-  id:  7099383380196571444 ## e.g. "783281470518440642"  for your baidu search id
-  site: http://zhannei.baidu.com/cse/search  ## your can change to your site instead of the default site
-  
+
+#### Baidu Image Plus
+imageplus:
+  enable: true
+  id: u1936476

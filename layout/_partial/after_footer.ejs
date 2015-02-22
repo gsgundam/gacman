@@ -150,7 +150,16 @@ var disqus_shortname = '<%= theme.disqus_shortname %>';
 </script>
 <% } %>
 
+<% if (theme.swiftype.enable){ %>
+<script type="text/javascript">
+    (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+        (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+        e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+    })(window,document,'script','//s.swiftypecdn.com/install/v1/st.js','_st');
 
+    _st('install','UF4Yzxa1R_zWExJtCun6');
+</script>
+<% } %>
 
 <% if (page.layout=='tags'||page.layout=='categories'){ %>
 <script type="text/javascript">
@@ -190,10 +199,16 @@ $(document).ready(function(){
   if($.fancybox){
     $('.fancybox').fancybox();
   }
-}); 
+});
 </script>
 <% } %>
 
+<% if (theme.imageplus.enable) {%>
+<script>
+    var cpro_id = '<% theme.imageplus.id %>';
+</script>
+<script src="http://cpro.baidustatic.com/cpro/ui/i.js"></script>
+<% } %>
 
 <!-- Analytics Begin -->
 <%- partial('analytics') %>
