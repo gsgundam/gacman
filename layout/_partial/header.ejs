@@ -12,17 +12,17 @@
                 <input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="" />
             </form>
             <% } else if(theme.baidu_search.enable){ %>
-            <form action="http://www.baidu.com/s" method="get" target="_blank" class="search">
+            <form action="http://www.baidu.com/s" method="get" target="_blank" class="search col-md-12">
                 <label>Search</label>
-                <input class="text-input" id="searchbox" type="search" name="q1" results="0" placeholder="">
-                <input type="submit" class="search-btn" value="SEARCH">
+                <input type="submit" class="search-btn col-xs-4 pull-right" value="<%= __('search') %>">
+                <input class="text-input" id="searchbox" class="text-input col-xs-8 pull-right" type="search" name="q1" results="0" placeholder="">
                 <input type="hidden" name="q6" value="<%- config.url.replace(/^https?:\/\//,'') %>">
             </form>
             <% } else if(theme.swiftype.enable){ %>
-            <form class="search" action="<%- config.root %>search/index.html" method="get" accept-charset="utf-8">
+            <form class="search col-md-12" action="<%- config.root %>search/index.html" method="get" accept-charset="utf-8">
                 <label>Search</label>
-                <input type="text" id="st-search-input searchbox" class="text-input" placeholder="" />
-                <input type="submit" class="search-btn" value="SEARCH">
+                <input type="submit" class="search-btn col-md-4 col-xs-2 pull-right" value="<%= __('search') %>">
+                <input type="text" id="st-search-input searchbox" class="text-input col-md-8 col-xs-10 pull-right" placeholder="" />
             </form>
             <% } else { %>
             <form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
@@ -33,6 +33,7 @@
             <% } %>
         </div>
     </div>
+
     <div class="navbar"><a class="navbutton navmobile" href="#" title="<%= __('menu') %>">
         </a></div>
     <nav class="animated">

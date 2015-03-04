@@ -52,15 +52,24 @@ body
       font-size font-size+10
   .search-container
     float right
+    @media screen and (max-width $screen-sm-max)
+      width 100%
 
 .navbar
   position absolute
-  width 2em
-  right 0em
-  top 1em
+  width 3em
+  right 0.4em
+  top 1.9em
   padding 0.5em
-  @media tablet
+  @media screen and (min-width $screen-md-min)
     display none
+  @media screen and (max-width $screen-sm-min)
+    top 1.5em
+
+.animated
+  height auto
+  @media screen and (max-width $screen-sm-max)
+    height 0
 
 .navbutton::before
   font-family font-icon-family
@@ -96,10 +105,14 @@ header nav
       color color-teal
 
 .shownav
-  max-height 40em
+  height auto
 
 .search
   padding 2.3em 0 0
+  @media screen and (max-width $screen-sm-max)
+    padding 0 0 1em
+  @media screen and (max-width $screen-sm-max)
+    width 100%
   float right
   input
     float left
@@ -111,15 +124,12 @@ header nav
     background color-white
   .text-input
     padding 0 0.4em
-    @media tablet
-      width 12em
-      transition .2s width
-      &:focus
-        width 20em
+    width 40%
+    transition .2s width
+    &:focus
+      width 50%
   .search-btn
     float left
-    margin-left 4px
-    width 6em
     background-color color-blue
     color color-white
   label

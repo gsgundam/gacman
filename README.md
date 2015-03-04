@@ -1,5 +1,7 @@
 # Gacman
 
+v0.1.5
+
 [中文说明](/README_zh.md)
 
 Gacman is a simple and responsive theme based on [Jacman](https://github.com/wuchong/jacman) and Bootstrap for [Hexo](http://hexo.io) with some special features.  

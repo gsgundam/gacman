@@ -1,5 +1,7 @@
 # Gacman
 
+v0.1.5
+
 [README](/README.md)
 
 Gacman 是为 [Hexo](http://hexo.io) 设计的一款简洁且具有响应式的主题。Gacman 基于 [Jacman](https://github.com/wuchong/jacman) 和 Bootstrap。
